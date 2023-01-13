@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/sakura/sakura.css">
+    <title>Restructure Example</title>
+</head>
+<body>
+    <header>
+        <a href="/">Restructure Example</a>
+    </header>
+    <main>
+        {{ content | safe }}
+    </main>
+    <footer>
+        <hr>
+        <nav>
+            {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
+        </nav>
+        <small>This isn't meant to be even close to what it would actually look like, just a quick demo of the type of structure we discussed</small>
+    </footer>
+</body>
+</html>
