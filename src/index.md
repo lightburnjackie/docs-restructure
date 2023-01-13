@@ -9,9 +9,13 @@ eleventyNavigation:
 
 Not sure where to begin? Start here!
 
-<button>Getting LightBurn</button>
-<button>Connecting Your Laser</button>
-<button>First Lasercut Project</button>
+{% set tutorials = collections.all | eleventyNavigation("Tutorials") %}
+
+{% for tutorial in tutorials %}
+[{{ tutorial.title }}]({{ tutorial.url }})
+{% endfor %}
+
+<a href="/tutorials"><button>See all tutorials</button></a>
 
 <small>This content should involve very heavy handholding and should avoid decisions. Test extensively, make sure these are as error-resistant as possible. EVERY step should result in at least a small success. This isn't a recipe, it's teaching a five year old to cook. You really do have to start by reminding them to wash their hands.</small>
 

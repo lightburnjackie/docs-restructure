@@ -6,8 +6,6 @@ eleventyNavigation:
     key: About
 ---
 
-# {{ title }}
-
 ## Goals of this demo
 - Explore usability of our restructuring plans
 - Have an easier way to demonstrate the concept

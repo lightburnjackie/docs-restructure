@@ -13,12 +13,13 @@
         <a href="/">Restructure Example</a>
     </header>
     <main>
+        <h1>{{ title }}</h1>
         {{ content | safe }}
     </main>
     <footer>
         <hr>
         <nav>
-            {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
+            <a href="/about">About</a>
         </nav>
         <small>This isn't meant to be even close to what it would actually look like, just a quick demo of the type of structure we discussed</small>
     </footer>
