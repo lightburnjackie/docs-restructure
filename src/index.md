@@ -5,7 +5,7 @@ layout: base.njk
 eleventyNavigation:
     key: Home
 ---
-## Beginner Tutorials
+## Getting Started
 
 Not sure where to begin? Start here!
 
