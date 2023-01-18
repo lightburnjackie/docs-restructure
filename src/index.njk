@@ -1,0 +1,72 @@
+---
+title: Home
+layout: base.njk
+
+eleventyNavigation:
+    key: Home
+---
+<article>
+
+    <h2>Getting Started</h2>
+    
+    <p>Not sure where to begin? Start here!</p>
+    
+    {% set tutorials = collections.all | eleventyNavigation("Tutorials") %}
+    
+    <ul>
+        {% for tutorial in tutorials %}
+        <li><a href="{{ tutorial.url }}">{{ tutorial.title }}</a></li>
+        {% endfor %}
+    </ul>
+    
+    <a href="/tutorials"><button>See all tutorials</button></a>
+    <p><small>This content should involve very heavy handholding and should avoid decisions. Test extensively, make sure these are as error-resistant as possible. EVERY step should result in at least a small success. This isn't a recipe, it's teaching a five year old to cook. You really do have to start by reminding them to wash their hands.</small></p>
+</article>
+
+<article>
+
+    <h2>Guides</h2>
+    
+    <p>Walkthroughs for using LightBurn and your laser</p>
+    
+    <button>Adjust interlocking parts with slot & tab resizer</button>
+    <button>Optimize cut settings with the material test generator</button>
+    <button>Install and configure a camera</button>
+    <button>See more guides</button>
+    
+    <p><small>Guides are step by step content, but with a lot less handholding than a tutorial. They should still be tested on a variety of setups, but are meant for users who have the ability to adapt to small changes and recover from errors. Think of this as equivalent to a recipe - a user who hasn't done something similar should be able to follow it exactly and get the same result, but it can also be used as a starting point to accomplish something related.</small></p>
+</article>
+
+<article>
+
+    <h2>Projects</h2>
+    
+    <p>Projects made using LightBurn. Try these projects or use them as the base for something else.</p>
+    
+    <button>Create a custom puzzle</button>
+    <button>Create ornaments based on drawings</buttons>
+    <button>Creating enameled pins</buttons>
+    <button>See more guide</button>
+    <p><small>This will have some overlap with guides. Some projects will be guides, but others will be more for inspiring other projects. I'd like each featured project to include a thumbnail image.</small></p>
+</article>
+            
+<article>
+
+    <h2>Troubleshooting</h2>
+    <p>If you're having trouble with LightBurn, we've got some guides to fixing common problems.</p>
+    
+    <button>LightBurn is cutting unexpected shapes</button>
+    <button>License key not received</button>
+    <button>Can't connect to laser</button>
+    <button>Laser not homing correctly</button>
+    <button>See more troubleshooting</button>
+    
+    <p><small>I'd like this to be interactive eventually. For now, tags and well-chosen titles should help users find information. Some will be guides (how to fix the problem), while others will be more explanation (why you're running into the problem)</small></p>
+</article>
+
+<article>
+    <h2>Reference</h2>
+    <p>Information about LightBurn's features, tools, and settings.</p>
+    <p><small>We're still discussing the best way to organize and display this at scale, but the primary display for individual pieces of content will be quick reference cards.</small></p>
+</article>
+

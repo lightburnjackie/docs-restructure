@@ -8,23 +8,26 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="/css/sakura/sakura.css">
     -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <!-- 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    -->
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
     <title>Restructure Example</title>
 </head>
 <body>
     <header>
-        <a href="/">Restructure Example</a>
+        <nav>
+            <h3>Restructure Example</h3>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+        </nav>
     </header>
     <main>
         <h1>{{ title }}</h1>
         {{ content | safe }}
     </main>
     <footer>
-        <hr>
-        <nav>
-            <a href="/about">About</a>
-        </nav>
-        <small>This isn't meant to be even close to what it would actually look like, just a quick demo of the type of structure we discussed</small>
+        <p><small>This isn't meant to be even close to what it would actually look like, just a quick demo of the type of structure we discussed</small></p>
     </footer>
 </body>
 </html>
