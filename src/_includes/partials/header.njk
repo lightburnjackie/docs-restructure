@@ -1,0 +1,26 @@
+<header>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="main navigation">
+        <div class="container-xl">
+            <a href="/" class="navbar-brand">Restructure Demo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto">
+                    {% for link in siteLinks %}
+                    <li class="nav-item">
+                        <a href="{{ link.url }}" class="nav-link">{{ link.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <form role="search">
+                    <input type="search" class="form-control" placeholder="search" aria-label="search">
+                </form>
+                
+            </div>
+        </div>
+    </nav>
+    
+</header>
