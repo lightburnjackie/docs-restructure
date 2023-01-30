@@ -1,8 +1,14 @@
-const eleventyNavigation = require('@11ty/eleventy-navigation');
+// const eleventyNavigation = require('@11ty/eleventy-navigation');
+const util = require('util')
 
-module.exports = function(eleventyConfig) {
-    // eleventyConfig.addPassthroughCopy('src/css');
-    eleventyConfig.addPlugin(eleventyNavigation);
+module.exports = function (eleventyConfig) {
+
+
+    eleventyConfig.addFilter('dump', obj => {
+        return util.inspect(obj)
+    });
+
+    // eleventyConfig.addPlugin(eleventyNavigation);
     return {
         markdownTemplateEngine: "njk",
         dir: {

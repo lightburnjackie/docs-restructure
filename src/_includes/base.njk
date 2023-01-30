@@ -13,12 +13,11 @@
     {% include "partials/header.njk" %}
 
     <main>
-        {% block mainContent %}
         <div class="container-fluid">
+        {% block mainContent %}
             <p>Placeholder for the mainContent block</p>
+            {% endblock mainContent %}
         </div>
-        {% endblock mainContent %}
-
     </main>
 
     {% include "partials/footer.njk" %}
