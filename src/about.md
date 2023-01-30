@@ -1,6 +1,6 @@
 ---
 title: About This Demo
-layout: base.njk
+layout: default.njk
 
 eleventyNavigation:
     key: About
