@@ -1,0 +1,23 @@
+{% extends "base.njk" %}
+
+{% block mainContent %}
+    <h1>{{ title }}</h1>
+
+    {% if showTemplate %}
+    <div class="alert alert-info alert-dismissable" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <h5 class="alert-heading">Template guide</h5>
+        <ul>
+            <li><b>Overview: </b>Describe what this guide covers. Use good key words for findability</li>
+            <li><b>What you'll need: </b>List what the user should have on hand and/or should already know before attempting this tutorial</li>
+            <li><b>Steps: </b>Individual steps. Use images and remember that each step should produce some visible progress</li>
+            <li><b>What's Next?: </b>Recommend next things to try</li>
+            <li><b>More Info: </b>List relevant resources, pages, projects, etc.</li>
+            <hr>
+            <p>If you don't need the template guide anymore, remove <code>showTemplate: true</code> from the page's front matter or set it to false</p>
+        </ul>
+    </div>
+    {% endif %}
+
+    {{ content | safe }}
+{% endblock mainContent %}
