@@ -3,6 +3,8 @@ title: Get & Install LightBurn (tutorial)
 layout: tutorial.njk
 
 tags: [tutorial, setup]
+licenseType: [all]
+machineType: [all]
 
 showTemplate: true
 ---

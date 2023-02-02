@@ -3,6 +3,7 @@ title: Connect a DSP Laser (tutorial)
 layout: tutorial.njk
 
 tags: [tutorial, setup, dsp]
+licenseType: [DSP]
 ---
 
 ## Overview

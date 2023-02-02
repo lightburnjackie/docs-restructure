@@ -3,6 +3,7 @@ title: First Project on a Galvo Laser (tutorial)
 layout: tutorial.njk
 
 tags: [tutorial, galvo, first-project]
+machineType: [Galvo]
 ---
 
 ## Overview

@@ -3,6 +3,7 @@ title: Connect a Galvo Laser (tutorial)
 layout: tutorial.njk
 
 tags: [tutorial, setup, galvo]
+licenseType: [Galvo]
 ---
 
 ## Overview

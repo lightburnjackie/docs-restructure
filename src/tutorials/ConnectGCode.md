@@ -3,6 +3,7 @@ title: Connect a GCode Laser (tutorial)
 layout: tutorial.njk
 
 tags: [tutorial, setup, gcode]
+licenseType: [GCode]
 ---
 
 ## Overview

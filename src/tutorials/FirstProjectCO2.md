@@ -3,6 +3,7 @@ title: First Project on a CO2 Laser (tutorial)
 layout: tutorial.njk
 
 tags: [tutorial, co2, first-project, qrcode]
+machineType: [CO2]
 ---
 
 ## Overview

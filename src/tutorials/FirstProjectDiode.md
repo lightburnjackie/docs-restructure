@@ -3,6 +3,7 @@ title: First Project on a Diode Laser (tutorial)
 layout: tutorial.njk
 
 tags: [tutorial, diode, first-project, qrcode]
+machineType: [Diode]
 ---
 
 ## Overview
