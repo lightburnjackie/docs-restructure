@@ -1,0 +1,18 @@
+{% extends "base.njk" %}
+
+{% block mainContent %}
+
+<h1>{{ title }}</h1>
+<div class="row mb-2">
+    {% if tags %}
+        <div class="col">
+        <h6>Tags</h6>
+        {% for tag in tags %}
+        <a href="#"><span class="badge text-bg-primary">{{ tag }}</span></a>
+        {% endfor %}
+        </div>
+    {% endif %}
+</div>
+
+    {{ content | safe }}
+{% endblock %}

@@ -1,9 +1,6 @@
 ---
 title: About This Demo
 layout: default.njk
-
-eleventyNavigation:
-    key: About
 ---
 
 ## Goals of this demo
@@ -26,6 +23,7 @@ eleventyNavigation:
     - **Guides** (practical working content) for most users. Step by step walkthroughs with some decisions and branching. Focused mostly on accomplishing a goal/task. Think of this as equivalent to a recipe - you can assume some basic knowledge, and users can use a guide as a jumping off point to accomplish something similar
     - **Reference** (theoretical working content) for users trying to accomplish something specific or find out what a tool/setting does. Short, accurate, consistent. Needs to be accurate and kept updated
     - **Explanations** (theoretical learning content) for users who need more information/context than provided in the other content. This will typically be longer, and linked to from other content. Separate this longer content that's not needed for everyone from the shorter content that will answer a lot of questions, so users aren't faced with a long wall of text that they don't want to read
+- Have useful thumbnail for content (probably card format) showing what the content is for
 ### For content team
 - Plan on versioning *from the start* to make it easier to incorporate
 - Simplify update process

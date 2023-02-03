@@ -1,5 +1,5 @@
 ---
 title: Home
-layout: homepage.njk
+layout: default.njk
 
 ---
