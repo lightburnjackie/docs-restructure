@@ -33,6 +33,11 @@
         {% endif %}
         <hr>
         <p>Maybe have a section here for quickref cards?</p>
+        {% if sidebarQuickrefs %}
+            {% for item in sidebarQuickrefs %}
+                {% quickref item %}
+            {% endfor %}
+        {% endif %}
     </div>
 
     <div class="col-9">
