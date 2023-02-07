@@ -1,5 +1,7 @@
 // const eleventyNavigation = require('@11ty/eleventy-navigation');
 const util = require('util')
+const testData = require('./src/_data/testData');
+const quickrefs = require('./src/_data/quickrefs');
 
 module.exports = function (eleventyConfig) {
 
@@ -8,9 +10,13 @@ module.exports = function (eleventyConfig) {
         return util.inspect(obj)
     });
 
-    eleventyConfig.addShortcode("test", function() {
-        return `url: ${this.page.url}`
+    eleventyConfig.addShortcode("test", function(arg) {
+        return `${ testData[arg] }`
     });
+
+    eleventyConfig.addShortcode("quickref", function(name) {
+        return `Display name for ${name} is ${quickrefs[name].displayName}`
+    })
 
     // eleventyConfig.addPlugin(eleventyNavigation);
     return {

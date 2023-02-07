@@ -16,7 +16,7 @@ We're going to keep templates as consistent as possible within a type
 - [Sample function page](#)
 - [Sample troubleshooting](#)
 
-{% test %}
+{% quickref "sample" %}
 
 
 There's a lot in [Adafruit's guide format](https://learn.adafruit.com/collins-lab-midi) that I like and which can be useful to us.
