@@ -8,6 +8,10 @@ module.exports = function (eleventyConfig) {
         return util.inspect(obj)
     });
 
+    eleventyConfig.addShortcode("test", function() {
+        return `url: ${this.page.url}`
+    });
+
     // eleventyConfig.addPlugin(eleventyNavigation);
     return {
         markdownTemplateEngine: "njk",
