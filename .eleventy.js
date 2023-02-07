@@ -1,22 +1,19 @@
 // const eleventyNavigation = require('@11ty/eleventy-navigation');
-const util = require('util')
-const testData = require('./src/_data/testData');
-const quickrefs = require('./src/_data/quickrefs');
+const util = require('util');
+// const quickrefs = require('./src/_data/quickrefs');
+// const markdownIt = require("markdown-it");
+const qrShortcode = require('./src/_includes/quickrefShortcode');
 
 module.exports = function (eleventyConfig) {
 
-
+    // eleventyConfig.setLibrary("md", markdownIt({html: true}));
+    
     eleventyConfig.addFilter('dump', obj => {
         return util.inspect(obj)
     });
 
-    eleventyConfig.addShortcode("test", function(arg) {
-        return `${ testData[arg] }`
-    });
 
-    eleventyConfig.addShortcode("quickref", function(name) {
-        return `Display name for ${name} is ${quickrefs[name].displayName}`
-    })
+    eleventyConfig.addShortcode("quickref", qrShortcode);
 
     // eleventyConfig.addPlugin(eleventyNavigation);
     return {
