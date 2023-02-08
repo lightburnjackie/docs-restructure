@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.3/materia/bootstrap.min.css">
+    <title>Restructure Example</title>
+
+</head>
+
+<body>
+    <header>
+    <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top"> -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark mb-2">
+        <div class="container-fluid">
+            <a href="/" class="navbar-brand">Restructure Demo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    
+                        <li class="nav-item"><a href="https://lightburnsoftware.com" class="nav-link">LightBurn Software</a></li>
+                    
+                        <li class="nav-item"><a href="https://forum.lightburnsoftware.com" class="nav-link">LightBurn Forums</a></li>
+                    
+                    <li class="nav-item"><a href="/internal" class="nav-link">Internal Notes</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <div class="container-fluid">
+    
+    <h1>About This Demo</h1>
+    <h2>Goals of this demo</h2>
+<ul>
+<li>Explore usability of our restructuring plans</li>
+<li>Have an easier way to demonstrate the concept</li>
+</ul>
+<h2>What this demo is NOT</h2>
+<ul>
+<li>An accurate representation of appearance</li>
+<li>Filled with content</li>
+<li>A statement of what platform we'd use (eleventy is quick to prototype this sort of thing, so I'm using it here)</li>
+</ul>
+<h2>Restructuring goals</h2>
+<h3>For users</h3>
+<ul>
+<li>Make content easier to find
+<ul>
+<li>Users are usually looking at the docs because they want to do something, and they're generally going to be looking based on what they're trying to do or what problem they're running into. Group content based on that</li>
+<li>Include UI images with overlays to indicate what things are</li>
+</ul>
+</li>
+<li>Help users encounter interesting content without searching for it directly</li>
+<li>Help users find the right <em>type</em> of content, where right now it's all mixed together
+<ul>
+<li><strong>Tutorials</strong> (practical learning content) for absolute beginners. Lots of handholding, no decisions, give beginners some quick wins to get them engaged. Think of this as teaching a small child to cook, rather than writing a recipe</li>
+<li><strong>Guides</strong> (practical working content) for most users. Step by step walkthroughs with some decisions and branching. Focused mostly on accomplishing a goal/task. Think of this as equivalent to a recipe - you can assume some basic knowledge, and users can use a guide as a jumping off point to accomplish something similar</li>
+<li><strong>Reference</strong> (theoretical working content) for users trying to accomplish something specific or find out what a tool/setting does. Short, accurate, consistent. Needs to be accurate and kept updated</li>
+<li><strong>Explanations</strong> (theoretical learning content) for users who need more information/context than provided in the other content. This will typically be longer, and linked to from other content. Separate this longer content that's not needed for everyone from the shorter content that will answer a lot of questions, so users aren't faced with a long wall of text that they don't want to read</li>
+</ul>
+</li>
+<li>Have useful thumbnail for content (probably card format) showing what the content is for</li>
+</ul>
+<h3>For content team</h3>
+<ul>
+<li>Plan on versioning <em>from the start</em> to make it easier to incorporate</li>
+<li>Simplify update process
+<ul>
+<li>Quick reference cards save us from explaining a tool over and over in guides/projects</li>
+<li>Systematic, consistent indications of what licenses/machines content is relevant to</li>
+<li>Separate out reference (has to be super accurate, but is quick and easy to update) from longer form content that can be more time-consuming and complex to update</li>
+</ul>
+</li>
+<li>Coordinate more with video content</li>
+</ul>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
