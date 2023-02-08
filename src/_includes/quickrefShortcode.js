@@ -4,7 +4,7 @@ module.exports = function(name) {
     const content = quickrefs[name];
 
     return `
-    <div class="card" style="max-width:400px;">
+    <div class="card">
         <img class="card-img-top" src="${ content.featuredImg }" alt="featured image for ${content.displayName}">
         <div class="card-body">
             <h4 class="card-title">${ content.displayName }</h4>

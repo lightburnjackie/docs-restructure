@@ -1,0 +1,44 @@
+{% extends "sidebarlayout.njk" %}
+
+{% block sidebar %}
+    <img src="https://via.placeholder.com/400x300?text=Featured+Image" class="img-fluid rounded" alt="featured image">
+        
+    <h1 class="h2">{{ title }}</h1>
+    <p>This is a description of the content</p>
+
+    {% if difficulty %}
+    <p><span class="fw-bold">Difficulty:</span> <span class="text-capitalize">{{ difficulty }}</span></p>
+    {% endif %}
+
+    {% if contentType %}
+    <p><span class="fw-bold">Content Type:</span> <span class="text-capitalize">{{ contentType }}</span></p>
+    {% endif %}
+
+    {% if tags %}
+    <p><span class="fw-bold">Tags:</span> 
+        {% for tag in tags %}
+            <a href="#"><span class="badge badge-pill text-bg-primary text-capitalize">{{ tag }}</span></a>
+        {% endfor %}
+    </p>
+    {% endif %}
+
+    {% if compatibility %}
+    <p><span class="fw-bold">Works with:</span>
+        {% for item in compatibility %}
+            <span class="badge badge-pill text-bg-primary">{{ item }}</span>
+        {% endfor %}
+    </p>
+    {% endif %}
+    <hr>
+    <p>Maybe have a section here for quickref cards?</p>
+    {% if sidebarQuickrefs %}
+        {% for item in sidebarQuickrefs %}
+            {% quickref item %}
+        {% endfor %}
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    {{ content | safe }}
+    
+{% endblock %}

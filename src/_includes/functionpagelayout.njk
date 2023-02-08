@@ -1,0 +1,38 @@
+{% extends "twocolumnlayout.njk" %}
+
+{% block sidebar %}
+<h1 class="h2">{{ title }}</h1>
+<p>This is a description of the content</p>
+
+{% if tags %}
+<p><span class="fw-bold">Tags:</span>
+    {% for tag in tags %}
+    <a href="#"><span class="badge badge-pill text-bg-primary text-capitalize">{{ tag }}</span></a>
+    {% endfor %}
+</p>
+{% endif %}
+
+{% if compatibility %}
+<p><span class="fw-bold">Works with:</span>
+    {% for item in compatibility %}
+    <span class="badge badge-pill text-bg-primary">{{ item }}</span>
+    {% endfor %}
+</p>
+{% endif %}
+
+<hr>
+
+<div class="row row-cols-1 gap-2">
+    {% for item in featuredQuickrefs %}
+    <div class="col">
+        {% quickref item %}
+    </div>
+    {% endfor %}
+
+</div>
+
+{% endblock %}
+
+{% block content %}
+{{ content | safe }}
+{% endblock %}
