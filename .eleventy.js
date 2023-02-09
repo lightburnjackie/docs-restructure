@@ -8,6 +8,9 @@ module.exports = function (eleventyConfig) {
         return util.inspect(obj)
     });
     eleventyConfig.addShortcode("quickref", qrShortcode);
+    eleventyConfig.setServerOptions({
+        showAllHosts: true
+    })
     
     return {
         markdownTemplateEngine: "njk",
