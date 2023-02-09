@@ -17,7 +17,7 @@ module.exports = function (eleventyConfig) {
         pathPrefix: "/restructure-demo/",
         dir: {
             input: "src",
-            output: "docs"
+            output: "_site"
         }
     }
 }
