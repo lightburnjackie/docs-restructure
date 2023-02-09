@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy && npx sass src/scss/custom.scss _site/css/output.css"
+    "build": "npx @11ty/eleventy && npx sass src/scss/custom.scss _site/css/output.css",
+    "dev": "npx @11ty/eleventy & npx sass --watch src/scss/custom.scss _site/css/output.css"
   },
   "keywords": [],
   "author": "",
