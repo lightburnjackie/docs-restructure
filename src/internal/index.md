@@ -9,11 +9,11 @@ Read more about the purpose for this demo [here]({{ './about' | url }})
 
 We're going to keep templates as consistent as possible within a type
 
-- [Sample tutorial]({{ './sampletutorial' | url }})
-- [Sample guide]({{ './sampleguide' | url }})
-- [Sample project]({{ './sampleproject' | url }})
-- [Sample quickref card]({{ './samplequickref' | url }})
-- [Sample feature page]({{ './samplefeaturepage' | url }})
+- [Sample tutorial]({{ './sampletutorial/' | url }})
+- [Sample guide]({{ './sampleguide/' | url }})
+- [Sample project]({{ './sampleproject/' | url }})
+- [Sample quickref card]({{ './samplequickref/' | url }})
+- [Sample feature page]({{ './samplefeaturepage/' | url }})
 - [Sample troubleshooting](#)
 
 

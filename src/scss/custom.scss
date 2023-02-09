@@ -1,7 +1,7 @@
 @use 'brandColors';
 
-$primary: brandColors.$brand-4;
+$primary: brandColors.$brand-3;
 $secondary: brandColors.$brand-2;
-$dark: brandColors.$brand-7;
+$dark: brandColors.$brand-6;
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
