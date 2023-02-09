@@ -5,14 +5,10 @@ on:
   push:
     branches: [main]
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# allow one concurrent deployment
-cancel-in-progress: true
-
+# permissions:
+#   contents: read
+#   pages: write
+#   id-token: write
 
 jobs:
 
