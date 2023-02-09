@@ -1,44 +1,48 @@
-{% extends "sidebarlayout.njk" %}
+{% extends "base.njk" %}
 
-{% block sidebar %}
-    <img src="https://via.placeholder.com/400x300?text=Featured+Image" class="img-fluid rounded" alt="featured image">
-        
-    <h1 class="h2">{{ title }}</h1>
-    <p>This is a description of the content</p>
+{% block bodyBlock %}
+<div class="row row-cols-1 row-cols-md-2">
+    <div class="col col-md-3" id="sidebar">
+        <img src="https://via.placeholder.com/400x300?text=Featured+Image" class="img-fluid rounded"
+            alt="featured image">
 
-    {% if difficulty %}
-    <p><span class="fw-bold">Difficulty:</span> <span class="text-capitalize">{{ difficulty }}</span></p>
-    {% endif %}
+        <h1 class="h2">{{ title }}</h1>
+        <p>This is a description of the content</p>
 
-    {% if contentType %}
-    <p><span class="fw-bold">Content Type:</span> <span class="text-capitalize">{{ contentType }}</span></p>
-    {% endif %}
+        {% if difficulty %}
+        <p><span class="fw-bold">Difficulty:</span> <span class="text-capitalize">{{ difficulty }}</span></p>
+        {% endif %}
 
-    {% if tags %}
-    <p><span class="fw-bold">Tags:</span> 
-        {% for tag in tags %}
+        {% if contentType %}
+        <p><span class="fw-bold">Content Type:</span> <span class="text-capitalize">{{ contentType }}</span></p>
+        {% endif %}
+
+        {% if tags %}
+        <p><span class="fw-bold">Tags:</span>
+            {% for tag in tags %}
             <a href="#"><span class="badge badge-pill text-bg-primary text-capitalize">{{ tag }}</span></a>
-        {% endfor %}
-    </p>
-    {% endif %}
+            {% endfor %}
+        </p>
+        {% endif %}
 
-    {% if compatibility %}
-    <p><span class="fw-bold">Works with:</span>
-        {% for item in compatibility %}
+        {% if compatibility %}
+        <p><span class="fw-bold">Works with:</span>
+            {% for item in compatibility %}
             <span class="badge badge-pill text-bg-primary">{{ item }}</span>
-        {% endfor %}
-    </p>
-    {% endif %}
+            {% endfor %}
+        </p>
+        {% endif %}
 
-    {% if sidebarQuickrefs %}
-    <hr>
+        {% if sidebarQuickrefs %}
+        <hr>
         {% for item in sidebarQuickrefs %}
-            {% quickref item %}
+        {% quickref item %}
         {% endfor %}
-    {% endif %}
-{% endblock %}
+        {% endif %}
+    </div>
+    <div class="col col-md-9" id="mainContent">
+        {{ content | safe }}
+    </div>
+</div>
 
-{% block content %}
-    {{ content | safe }}
-    
 {% endblock %}

@@ -1,38 +1,44 @@
-{% extends "twocolumnlayout.njk" %}
+{% extends "base.njk" %}
 
-{% block sidebar %}
-<h1 class="h2">{{ title }}</h1>
-<p>This is a description of the content</p>
-
-{% if tags %}
-<p><span class="fw-bold">Tags:</span>
-    {% for tag in tags %}
-    <a href="#"><span class="badge badge-pill text-bg-primary text-capitalize">{{ tag }}</span></a>
-    {% endfor %}
-</p>
-{% endif %}
-
-{% if compatibility %}
-<p><span class="fw-bold">Works with:</span>
-    {% for item in compatibility %}
-    <span class="badge badge-pill text-bg-primary">{{ item }}</span>
-    {% endfor %}
-</p>
-{% endif %}
-
-<hr>
-
-<div class="row row-cols-1 gap-2">
-    {% for item in featuredQuickrefs %}
-    <div class="col">
-        {% quickref item %}
+{% block bodyBlock %}
+    
+<div class="row row-cols-1 row-cols-md-2">
+    <div class="col col-md-3" id="sidebar">
+        <h1 class="h2">{{ title }}</h1>
+        <p>This is a description of the content</p>
+        
+        {% if tags %}
+        <p><span class="fw-bold">Tags:</span>
+            {% for tag in tags %}
+            <a href="#"><span class="badge badge-pill text-bg-primary text-capitalize">{{ tag }}</span></a>
+            {% endfor %}
+        </p>
+        {% endif %}
+        
+        {% if compatibility %}
+        <p><span class="fw-bold">Works with:</span>
+            {% for item in compatibility %}
+            <span class="badge badge-pill text-bg-primary">{{ item }}</span>
+            {% endfor %}
+        </p>
+        {% endif %}
+        
+        <hr>
+        
+        <div class="row row-cols-1 gap-2">
+            {% for item in featuredQuickrefs %}
+            <div class="col">
+                {% quickref item %}
+            </div>
+            {% endfor %}
+            
+        </div>
     </div>
-    {% endfor %}
-
+    
+    <div class="col col-md-9" id="mainContent">
+        {{ content | safe}}
+    </div>
+    
 </div>
 
-{% endblock %}
-
-{% block content %}
-{{ content | safe }}
 {% endblock %}
