@@ -14,7 +14,7 @@ module.exports = function (eleventyConfig) {
     
     return {
         markdownTemplateEngine: "njk",
-        pathPrefix: "/restructure-demo/",
+        pathPrefix: "/docs-restructure/",
         dir: {
             input: "src",
             output: "_site"
