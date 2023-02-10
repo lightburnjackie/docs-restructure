@@ -1,4 +1,4 @@
-const quickrefs = require('../_data/quickrefs');
+const quickrefs = require('../../_data/quickrefs');
 
 module.exports = function(name) {
     const content = quickrefs[name];
