@@ -13,7 +13,7 @@ We're going to keep templates as consistent as possible within a type
 - [Sample guide]({{ './sampleguide/' | url }})
 - [Sample project]({{ './sampleproject/' | url }})
 - [Sample quickref card]({{ './samplequickref/' | url }})
-- [Sample feature page]({{ './samplefeaturepage/' | url }})
+- [Sample function page]({{ './samplefunctionpage/' | url }})
 - [Sample troubleshooting](#)
 
 
