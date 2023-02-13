@@ -14,7 +14,7 @@ We're going to keep templates as consistent as possible within a type
 - [Sample project]({{ './sampleproject/' | url }})
 - [Sample quickref card]({{ './samplequickref/' | url }})
 - [Sample function page]({{ './samplefunctionpage/' | url }})
-- [Sample troubleshooting](#)
+- [Sample troubleshooting][def]
 
 
 
@@ -33,3 +33,5 @@ Not every page is relevant for every purpose. Here are some types of information
 - machine/license type (should these be separated?)
 - release info
 - content type (guide, tutorial, etc)
+
+[def]: #
