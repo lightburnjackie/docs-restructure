@@ -1,6 +1,6 @@
 const util = require('util');
 
-const qrShortcode = require('./src/_includes/quickrefShortcode');
+const qrShortcode = require('./src/_includes/shortcodes/quickrefShortcode');
 
 module.exports = function (eleventyConfig) {
     
