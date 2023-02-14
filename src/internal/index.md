@@ -3,7 +3,7 @@ title: Internal Notes
 layout: default.njk
 ---
 
-Read more about the purpose for this demo [here]({{ './about' }})
+Read more about the purpose for this demo [here]({{ './about/' }})
 
 ## Templates
 
@@ -14,7 +14,7 @@ We're going to keep templates as consistent as possible within a type
 - [Sample project]({{ './sampleproject/' }})
 - [Sample quickref card]({{ './samplequickref/' }})
 - [Sample function page]({{ './samplefunctionpage/' }})
-- [Sample troubleshooting][#]
+- [Sample troubleshooting](#)
 
 
 
