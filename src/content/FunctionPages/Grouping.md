@@ -9,13 +9,15 @@ compatibility: [dsp, ruida, gcode]
 ---
 
 
-![Group vs Ungroup](src/content/../../Grouping-GroupVsUngroup.gif)
+<!-- ![Group vs Ungroup](src/content/../../Grouping-GroupVsUngroup.gif) -->
+![Group vs Ungroup]({{ '/content/img/Grouping-GroupVsUngroup.gif' | url }})
 [Groups](#) are used to speed up the process of selecting, moving, aligning, and arranging designs; particularily when those designs are made up of multiple parts (lines, shapes, images, text, etc.). 
 
 If you can't node-edit an [imported](#) design, it could be because that design needs to be [ungrouped](#). 
 
 
-![Group vs Auto-Group](src/content/../../Grouping-GroupVsAutoGrouped.gif)
+<!-- ![Group vs Auto-Group](src/content/../../Grouping-GroupVsAutoGrouped.gif) -->
+![Group vs Auto-Group]({{ '/content/img/Grouping-GroupVsAutoGrouped.gif' | url }})
 In addition to standard grouping tools, LightBurn can also [auto-group](#) multiple multi-part objects with their respective components, which is very handy for files that contain multiple designs. 
 
 

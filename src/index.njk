@@ -1,0 +1,57 @@
+---
+title: Home
+layout: default.njk
+---
+{% sizeIndicator %}
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2">
+    <div class="col">
+        <h2>Tutorials</h2>
+        <p>Description of tutorial category</p>
+    </div>
+
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Tutorial 1</h5>
+                <p class="card-text">Description of tutorial 1</p>
+                <a href="{{ '/internal/sampletutorial/' | url }}" class="btn btn-primary">More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Tutorial 2</h5>
+                <p class="card-text">Description of tutorial 2</p>
+                <a href="{{ '/internal/sampletutorial/' | url }}" class="btn btn-primary">More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Tutorial 3</h5>
+                <p class="card-text">Description of tutorial 3</p>
+                <a href="{{ '/internal/sampletutorial/' | url }}" class="btn btn-primary">More</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<hr>
+
+<div class="alert alert-info">
+    <p class="fw-bold">Temporary list of all pages</p>
+    <ul>
+
+        {% for item in collections.all %}
+        <li><a href="{{ item.url | url }}">{{ item.data.title }}</a></li>
+        {% endfor %}
+    </ul>
+
+</div>
+

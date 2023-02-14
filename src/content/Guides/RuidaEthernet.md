@@ -1,6 +1,6 @@
 ---
 title: Connecting to Ruida Controllers via Ethernet
-layout: walkthroughlayout.njk
+layout: twocolumncontent.njk
 
 tags: [setup, hardware, ruida, dsp, ethernet]
 difficulty: beginner
