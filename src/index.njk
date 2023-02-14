@@ -15,7 +15,7 @@ layout: default.njk
             <div class="card-body">
                 <h5 class="card-title">Tutorial 1</h5>
                 <p class="card-text">Description of tutorial 1</p>
-                <a href="{{ '/internal/sampletutorial/' | url }}" class="btn btn-primary">More</a>
+                <a href="{{ '/internal/sampletutorial/' }}" class="btn btn-primary">More</a>
             </div>
         </div>
     </div>
@@ -25,7 +25,7 @@ layout: default.njk
             <div class="card-body">
                 <h5 class="card-title">Tutorial 2</h5>
                 <p class="card-text">Description of tutorial 2</p>
-                <a href="{{ '/internal/sampletutorial/' | url }}" class="btn btn-primary">More</a>
+                <a href="{{ '/internal/sampletutorial/' }}" class="btn btn-primary">More</a>
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@ layout: default.njk
             <div class="card-body">
                 <h5 class="card-title">Tutorial 3</h5>
                 <p class="card-text">Description of tutorial 3</p>
-                <a href="{{ '/internal/sampletutorial/' | url }}" class="btn btn-primary">More</a>
+                <a href="{{ '/internal/sampletutorial/' }}" class="btn btn-primary">More</a>
             </div>
         </div>
     </div>
@@ -49,7 +49,7 @@ layout: default.njk
     <ul>
 
         {% for item in collections.all %}
-        <li><a href="{{ item.url | url }}">{{ item.data.title }}</a></li>
+        <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
         {% endfor %}
     </ul>
 
