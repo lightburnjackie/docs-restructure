@@ -1,0 +1,11 @@
+---
+title: Home
+layout: default.njk
+
+---
+
+<h2>Tutorials</h2>
+
+{% for page in collections.all %}
+    {{ page.data.tags }}
+{% endfor %}
