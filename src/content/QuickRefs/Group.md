@@ -1,3 +1,4 @@
+<!--
 ---
 contentType: quickref
 layout: quickreflayout.njk
@@ -16,3 +17,4 @@ Not to be confused with: [Boolean modifiers](#)
 tags: [design, workflow, vector, raster, select, move, transform, rotate, join]
 
 ---
+-->

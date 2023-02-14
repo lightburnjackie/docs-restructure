@@ -29,11 +29,13 @@ Grouping is sometimes confused with the [Boolean Modifier tools](#), the differe
 You can make groups within groups by grouping some objects, selecting some more objects and grouping them again. When you ungroup the object it will undo one 'level' of the grouping, preserving the groups within it. This can be really handy when you want to align the centre of two objects with the centre of another object. 
 
 ## Ungroup
+**Insert ungroup card here**
 *Ungrouping* simply turns a set of grouped objects back into individual ones. Nodes cannot be edited directly in grouped objects, so to change the nodes in a grouped object you must first ungroup it. Some designs made in other software may import as a group, and thus require ungrouping before they can be edited. 
 
 
 ## Auto-Group
-Automatically groups shapes within other shapes that contain them, for example if you had a 10 donut-shaped vectors, and you selected them all and auto-grouped them, you would end up with 10 groups, each containing the outer line of the donut and the 'hole' of the donut. 
+**Insert autogroup card here**
+Automatically groups shapes with   in other shapes that contain them, for example if you had a 10 donut-shaped vectors, and you selected them all and auto-grouped them, you would end up with 10 groups, each containing the outer line of the donut and the 'hole' of the donut. 
 
 
 ## Troubleshooting
