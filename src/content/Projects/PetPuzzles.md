@@ -1,6 +1,6 @@
 ---
 title: Pet Puzzle Post Cards
-layout: walkthroughlayout.njk
+layout: twocolumncontent.njk
 tags: [image, raster, engraving, cutting, vector]
 difficulty: beginner
 laserType: [C02, Diode]
