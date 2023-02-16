@@ -1,17 +1,23 @@
 <header>
-    <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top"> -->
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark mb-2">
+    <!-- <nav class="navbar navbar-expand-xl bg-dark navbar-dark fixed-top"> -->
+    <nav class="navbar navbar-expand-xl bg-primary navbar-dark mb-2">
         <div class="container">
             <a href="{{ '/' }}" class="navbar-brand">Restructure Demo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-xl-0">
                     {% for link in siteLinks %}
                         <li class="nav-item"><a href="{{ link.url }}" class="nav-link">{{ link.title }}</a></li>
                     {% endfor %}
-                    <li class="nav-item"><a href="{{ '/internal/' }}" class="nav-link">Internal Notes</a></li>
+                    <li class="nav-item"><a href="{{ '/DemoArea/' }}" class="nav-link">Demo Area</a></li>
+                    
+                    <li class="nav-item"><a href="{{ '/Tutorials/' }}" class="nav-link">Tutorials</a></li>
+                    <li class="nav-item"><a href="{{ '/Guides/' }}" class="nav-link">Guides</a></li>
+                    <li class="nav-item"><a href="{{ '/Projects/' }}" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="{{ '/Troubleshooting/' }}" class="nav-link">Troubleshooting</a></li>
+                    <li class="nav-item"><a href="{{ '/FunctionPages/' }}" class="nav-link">Function Pages</a></li>
                 </ul>
             </div>
         </div>

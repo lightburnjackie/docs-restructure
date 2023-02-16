@@ -9,7 +9,7 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
-    eleventyConfig.addPassthroughCopy('src/content/img');
+    eleventyConfig.addPassthroughCopy('src/IMG');
     
     eleventyConfig.addFilter('dump', obj => {
         return util.inspect(obj)
@@ -20,7 +20,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.setServerOptions({
         showAllHosts: true
     })
-    
+
     return {
         markdownTemplateEngine: "njk",
         pathPrefix: "/docs-restructure/",
