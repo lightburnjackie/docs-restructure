@@ -2,59 +2,83 @@
 title: Quickref Sample
 layout: twocolumncontent.njk
 ---
-{# 
+{#
 TO DO/ Suggestions:
- - Add feilds:
-     - last modified (version) 
-     - related functions (list of links to other cards, e.g group would have ungroup, autogroup, Boolean
- - Split windows and mac hotkeys
- #} 
-{% set sample = quickrefs.sample %}
+- Add feilds:
+- last modified (version)
+- related functions (list of links to other cards, e.g group would have ungroup, autogroup, Boolean
+- Split windows and mac hotkeys
+#}
+{% set f = quickrefs.group %}
 
-<div class="alert alert-info">
-    If we want, we can add tabs to the cards to switch between sets of content. Not sure if that's really something we
-    want, but leaving that info here
-</div>
+<hr>
 
-<div class="card col-4">
-    <img class="card-img-top" src="{{ sample.featuredImg }}" alt="featured image for {{ sample.displayName }}">
+<h2>Standard card display</h2>
+
+<div class="card">
+    <img src="{{ f.featuredImg }}" alt="{{ f.displayName }} featured image">
     <div class="card-body">
-        <h4 class="card-title">{{ sample.displayName }}</h4>
-        <p class="card-text">{{ sample.description }}</p>
-        <hr>
-        <div class="row row-cols-1 row-cols-md-2">
-            <div class="col col-md-3">
-                <h5>Menu</h5>
-            </div>
-            <div class="col col-md-9 d-flex flex-column flex-md-row gap-2">
-                <div>
-                    <img src="{{ sample.ui.icon }}" alt="" class="">
+        <h4 class="card-title">{{ f.displayName }}</h4>
+        <p class="card-text">{{ f.description }}</p>
+
+        <div class="row g-3">
+            <div class="col">
+                <h5>UI</h5>
+                <div class="d-flex gap-2">
+                    <i class="bi-eye"></i>
+                    <p class="fw-bold mb-0">{{ f.ui.menu }}</p>
                 </div>
-                <p>{{ sample.ui.menu }}</p>
             </div>
-        </div>
-        <hr>
-        <div class="row row-cols-1 row-cols-md-2">
-            <div class="col col-md-3">
+
+            <div class="col-12 col-xxl-6">
                 <h5>Hotkeys</h5>
+                <div class="d-flex gap-2">
+                    <div id="pcHotkeys">
+                        {% for item in f.hotkeys.pc %}
+                        <kbd>{{ item }}</kbd>
+                        {% endfor %}
+                    </div>
+                    <p class="mb-0">/</p>
+                    <div id="macHotkeys">
+                        {% for item in f.hotkeys.mac %}
+                        <kbd>{{ item }}</kbd>
+                        {% endfor %}
+                    </div>
+                </div>
             </div>
-            <div class="col col-md-9 d-flex flex-column flex-md-row gap-2 align-items-baseline">
-                <p><kbd>{{ sample.hotkeys.pc }}</kbd> / <kbd>{{ sample.hotkeys.mac }}</kbd></p>
-            </div>
-        </div>
-        <hr>
-        <div class="row row-cols-1 row-cols-md-2">
-            <div class="col col-md-3">
-                <h5>Works with</h5>
-            </div>
-            <div class="col col-md-9 d-flex flex-column flex-md-row gap-2">
-                <div>
-                    {% for item in sample.compatibility %}
-                        <p class="badge text-bg-primary">{{ item }}</p>
+
+            <div class="col-12 col-xxl-6">
+                <h5>Compatibility</h5>
+                <div class="d-flex gap-2">
+                    {% for item in f.compatibility %}
+                        <a href="#"><span class="badge text-bg-primary">{{ item }}</span></a>
                     {% endfor %}
                 </div>
             </div>
+
+            <div class="col-12 col-xxl-6">
+                <h5>See also</h5>
+                <div class="d-flex gap-2">
+                    {% for item in f.related %}
+                        <a href="#"><span class="badge text-bg-primary">{{ item }}</span></a>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="col-12">
+                <h5>Tags</h5>
+                <div class="d-flex flex-wrap gap-2">
+                    {% for item in f.tags %}
+                        <a href="#"><span class="badge text-bg-primary">{{ item }}</span></a>
+                    {% endfor %}
+                </div>
+            </div>
+
+
         </div>
+        <a href="{{ f.link }}" class="btn btn-primary d-block mt-3">See more</a>
+    </div>
+    <div class="card-footer">
+        Last changed: {{ f.lastModified }}
     </div>
 </div>
-

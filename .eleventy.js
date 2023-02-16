@@ -5,6 +5,7 @@ const qrShortcode = require('./src/_includes/shortcodes/quickrefShortcode');
 const sizeShortcode = require('./src/_includes/shortcodes/sizeIndicator');
 const imgShortcode = require('./src/_includes/shortcodes/insertImg');
 
+
 module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
