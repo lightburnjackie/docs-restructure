@@ -1,5 +1,6 @@
 const util = require('util');
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
 
 const qrShortcode = require('./src/_includes/shortcodes/quickrefShortcode');
 const sizeShortcode = require('./src/_includes/shortcodes/sizeIndicator');
@@ -9,6 +10,7 @@ const imgShortcode = require('./src/_includes/shortcodes/insertImg');
 module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+    eleventyConfig.addPlugin(EleventyRenderPlugin);
 
     eleventyConfig.addPassthroughCopy('src/IMG');
     
