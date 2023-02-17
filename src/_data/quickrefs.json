@@ -1,7 +1,7 @@
 {
     "group": {
         "displayName": "Group",
-        "featuredImg": "https://via.placeholder.com/350x200",
+        "featuredImg": "/IMG/Grouping-GroupVsUngroup.gif",
         "description": "Collects several objects together so they can be easily selected and moved as one.",
         "ui": {
             "icon": "https://via.placeholder.com/50",
